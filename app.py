@@ -25,11 +25,11 @@ def home():
 def chat():
     user_input = request.form['user_input']
     
-    # Initial message list with user input
-    messages: List = [{
-        "role": "user",
-        "content": user_input
-    }]
+    # Set the assistant's params as a financial advisor
+    messages: List = [
+        {"role": "system", "content": "You are a highly knowledgeable financial advisor."},
+        {"role": "user", "content": user_input}
+    ]
 
     # First API call to OpenAI using GPT-4o
     response = client.chat.completions.create(
