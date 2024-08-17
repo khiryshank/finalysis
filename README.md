@@ -95,9 +95,7 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 
 6. Run the file on your local machine
-   ```sh
-   run 'app.py'
-   ```
+   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,12 +104,69 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Sample app code:
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+``from flask import Flask, render_template, request, jsonify
+import os
+from dotenv import load_dotenv
+from toolhouse import Toolhouse
+from openai import OpenAI
+from typing import List
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+# Load environment variables
+load_dotenv()
 
+# Initialize OpenAI and Toolhouse clients
+client = OpenAI()
+tools = Toolhouse()
+
+# Set metadata for Toolhouse (e.g., timezone)
+tools.set_metadata("timezone", -7)
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/chat', methods=['POST'])
+def chat():
+    user_input = request.form['user_input']
+    
+    # Set the assistant's params as a financial advisor
+    messages: List = [
+        {"role": "system", "content": "You are a highly knowledgeable financial analyst."},
+        {"role": "user", "content": user_input}
+    ]
+
+    # First API call to OpenAI using GPT-4o
+    response = client.chat.completions.create(
+        model='gpt-4o',
+        messages=messages,
+        tools=tools.get_tools(),
+        tool_choice="auto"
+    )
+
+    # Run tools and update messages
+    messages += tools.run_tools(response)
+
+    # Second API call to OpenAI using GPT-4o-mini
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=messages,
+        tools=tools.get_tools(),
+        tool_choice="auto"
+    )
+
+    # Extract and return the response content
+    chatgpt_reply = response.choices[0].message.content
+
+    return jsonify({'reply': chatgpt_reply})
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+   ```
 
 
 <!-- CONTRIBUTING -->
