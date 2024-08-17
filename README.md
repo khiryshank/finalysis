@@ -71,7 +71,6 @@ This is an SDK for an AI Chatbot. It's written with Flask/Python and is powered 
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * Python
 * Toolhouse API
@@ -79,8 +78,6 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * Flask Library
 * OpenAI API
 * Dotenv
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,18 +98,19 @@ You'll also need the [OpenAI API](https://platform.openai.com/api-keys) Keys and
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Get a free API keys from above
 2. Clone the repo
    ```sh
    git clone https://github.com/github_username/repo_name.git
    ```
-3. Install NPM packages
+3. PIP install requirements.text
    ```sh
-   npm install
+   pip install requirements.txt
    ```
-4. Enter your API in `config.js`
+4. Enter your API tokens in `.env` file using the following format
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   TOOLHOUSE_API_KEY=
+   OPENAI_API_KEY=
    ```
 5. Change git remote url to avoid accidental pushes to base project
    ```sh
