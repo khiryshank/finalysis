@@ -40,7 +40,7 @@
 
 
 
-This is an SDK for an AI Chatbot. It's written with Flask/Python and is powered by Toolhouse.
+This is an SDK for an AI Chatbot. It's written with Flask/Python and is powered by Toolhouse. You can ask it a variety of things related to financial markets. You can also expand its capablities with the Toolhouse Tool Store.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,6 +90,11 @@ _Below is an example of how you can instruct your audience on installing and set
    OPENAI_API_KEY=
    ```
 5. Run the file on your local machine
+   ```sh
+   run 'app.py'
+   ```
+
+6. Run the file on your local machine
    ```sh
    run 'app.py'
    ```
