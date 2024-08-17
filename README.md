@@ -112,10 +112,9 @@ _Below is an example of how you can instruct your audience on installing and set
    TOOLHOUSE_API_KEY=
    OPENAI_API_KEY=
    ```
-5. Change git remote url to avoid accidental pushes to base project
+5. Run the file on your local machine
    ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
+   run 'app.py'
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
