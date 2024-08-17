@@ -27,7 +27,7 @@ def chat():
     
     # Set the assistant's params as a financial advisor
     messages: List = [
-        {"role": "system", "content": "You are a highly knowledgeable financial advisor."},
+        {"role": "system", "content": "You are a highly knowledgeable financial analyst."},
         {"role": "user", "content": user_input}
     ]
 
