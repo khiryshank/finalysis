@@ -1,105 +1,89 @@
+# AI Chatbot SDK
 
+## Table of Contents
 
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgments](#acknowledgments)
 
-
-
-
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
-
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
-
-
-This is an SDK for an AI Chatbot. It's written with Flask/Python and is powered by Toolhouse. You can ask it a variety of things related to financial markets. You can also expand its capablities with the Toolhouse Tool Store.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+This SDK is designed for an AI Chatbot built with Flask and Python, powered by the Toolhouse API. It specializes in answering queries related to financial markets and can be expanded with additional capabilities through the Toolhouse Tool Store.
 
 ### Built With
 
+- Python
+- Toolhouse API
+- Flask
+- OpenAI API
+- HTML/CSS
+- Dotenv
 
-* Python
-* Toolhouse API
-* HTML/CSS
-* Flask Library
-* OpenAI API
-* Dotenv
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
 ## Getting Started
 
-To get up and running:
-Clone this Rep. 
+To set up the project locally, follow these steps:
 
 ### Prerequisites
 
-You'll need to install or set your venv to Python 3.12.5
-You'll also need the [OpenAI API](https://platform.openai.com/api-keys) Keys and the [Toolhouse API keys](https://app.toolhouse.ai/settings/api-keys)
+- Python 3.12.5 installed
+- API keys for the [OpenAI API](https://platform.openai.com/api-keys) and the [Toolhouse API](https://app.toolhouse.ai/settings/api-keys)
 
 ### Installation
 
-
-1. Get a free API keys from above
-2. Clone the repo
+1. Obtain your API keys from the links above.
+2. Clone the repository:
    ```sh
    git clone https://github.com/github_username/repo_name.git
-   ```
-3. PIP install requirements.text
+
+3. Install the required packages:
+
    ```sh
-   pip install requirements.txt
-   ```
-4. Enter your API tokens in `.env` file using the following format
-   ```js
-   TOOLHOUSE_API_KEY=
-   OPENAI_API_KEY=
-   ```
-5. Run the file on your local machine
+    pip install -r requirements.txt
+
+4. Add your API keys to the .env file in the following format:
    ```sh
-   run 'app.py'
-   ```
-6. You can make it even more powerful. Go to the [Toolhouse Store](https://app.toolhouse.ai/store). Select a functionality you'd like to use, like send an email and click 'install'. 
+   TOOLHOUSE_API_KEY=your_toolhouse_key
+   OPENAI_API_KEY=your_openai_key
+5. Run the application:
+    ```sh
+   python app.py
+6. Enhance your chatbot's functionality by visiting the Toolhouse Store and installing additional features, such as email sending capabilities
+
+  
+## Usage
+To use the chatbot, simply run the application and start interacting with it. You can ask it various questions related to financial markets, and it will respond accordingly. For more advanced features, check out the [Toolhouse Store](https://app.toolhouse.ai/store).
+
+## Roadmap
+See the open issues for a list of proposed features (and known issues).
+
+## Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+Fork the Project
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+Push to the Branch (git push origin feature/AmazingFeature)
+Open a Pull Request
+
+##Contact
+Khiry Shank - @khiryshank - khiryshank@gmail.com
+
+Project Link: https://github.com/github_username/repo_name
+
+## Acknowledgments
+  Toolhouse
+  OpenAI
+  Flask
 
 
-
-
-<!-- USAGE EXAMPLES -->
-Example UI
-
-![Screenshot 2024-08-17 at 10 14 11 AM](https://github.com/user-attachments/assets/78754eb3-e875-4bcc-8afe-aba78e37057c)
 
 
