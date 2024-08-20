@@ -77,7 +77,7 @@ Open a Pull Request
 ## Contact
 Khiry Shank - LinkedIn: https://www.linkedin.com/in/khiryshank/ - khiryshank@gmail.com
 
-Project Link: https://github.com/github_username/repo_name
+Project Link: [https://github.com/github_username/repo_name](https://github.com/khiryshank/finalysis/)
 
 ## Acknowledgments
   - Toolhouse
