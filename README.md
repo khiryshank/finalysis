@@ -74,8 +74,8 @@ Commit your Changes (git commit -m 'Add some AmazingFeature')
 Push to the Branch (git push origin feature/AmazingFeature)
 Open a Pull Request
 
-##Contact
-Khiry Shank - @khiryshank - khiryshank@gmail.com
+## Contact
+Khiry Shank - LinkedIn: https://www.linkedin.com/in/khiryshank/ - khiryshank@gmail.com
 
 Project Link: https://github.com/github_username/repo_name
 
