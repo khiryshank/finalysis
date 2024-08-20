@@ -34,7 +34,7 @@ To set up the project locally, follow these steps:
 ### Prerequisites
 
 - Python 3.12.5 installed
-- API keys for the [OpenAI API](https://platform.openai.com/api-keys) and the [Toolhouse API](https://app.toolhouse.ai/settings/api-keys)
+- API keys for the [OpenAI API](https://platform.openai.com/api-keys) and the [Toolhouse API](https://app.toolhouse.ai/settings/api-keys) (You may need to sign up for the waitlist)
 
 ### Installation
 
