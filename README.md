@@ -48,7 +48,7 @@ To set up the project locally, follow these steps:
    ```sh
     pip install -r requirements.txt
 
-4. Add your API keys to the .env file in the following format:
+4. Make an .env file with no name and it to your root direcAdd your API keys to the .env file in the following format:
    ```sh
    TOOLHOUSE_API_KEY=your_toolhouse_key
    OPENAI_API_KEY=your_openai_key
