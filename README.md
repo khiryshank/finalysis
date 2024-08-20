@@ -77,7 +77,7 @@ Contributions are what make the open-source community such an amazing place to l
 ## Contact
 Khiry Shank - LinkedIn: https://www.linkedin.com/in/khiryshank/ - khiryshank@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/khiryshank/finalysis/)
+Project Link: [https://github.com/khiryshank/finalysis/](https://github.com/khiryshank/finalysis/)
 
 ## Acknowledgments
   - Toolhouse
