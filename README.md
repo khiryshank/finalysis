@@ -41,7 +41,7 @@ To set up the project locally, follow these steps:
 1. Obtain your API keys from the links above.
 2. Clone the repository:
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/khiryshank/finalysis
 
 3. Install the required packages:
 
