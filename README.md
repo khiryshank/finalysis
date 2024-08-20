@@ -80,9 +80,9 @@ Khiry Shank - LinkedIn: https://www.linkedin.com/in/khiryshank/ - khiryshank@gma
 Project Link: https://github.com/github_username/repo_name
 
 ## Acknowledgments
-  Toolhouse
-  OpenAI
-  Flask
+  - Toolhouse
+  - OpenAI
+  - Flask
 
 
 
