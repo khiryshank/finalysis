@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat with Fin AI</title>
+    <title>Chat with GPT</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -15,10 +15,10 @@
     </header>
     <main>
         <div class="chat-container">
-            <h1>Chat with FIN AI</h1>
+            <h1>Chat with GPT</h1>
             <div id="chat-box" class="chat-box">
                 <!-- Initial Welcome Message -->
-                <p class="bot-message"><strong>FIN AI:</strong> Welcome to Finalysis AI! I'm Fin your financial advisor. How can I assist you today?</p>
+                <p class="bot-message"><strong>GPT:</strong> Welcome! I'm your financial advisor. How can I assist you today?</p>
             </div>
             <form id="chat-form" class="chat-form">
                 <input type="text" id="user-input" placeholder="Type your message here..." autocomplete="off" required>
@@ -27,10 +27,20 @@
         </div>
     </main>
     <footer>
-        <p>&copy; 2024 Khiry Shank - All Rights Reserved</p>
+        <p>&copy; 2024 FinChat - All Rights Reserved</p>
     </footer>
 
     <script>
+        function formatResponse(text) {
+            // Add line breaks for paragraphs
+            text = text.split('\n').map(part => `<p>${part.trim()}</p>`).join('');
+
+            // Optionally wrap code blocks in <code> tags
+            text = text.replace(/```(.*?)```/gs, '<code>$1</code>');
+
+            return text;
+        }
+
         document.getElementById('chat-form').onsubmit = async function(event) {
             event.preventDefault();
 
@@ -54,10 +64,10 @@
 
             // Get the ChatGPT response
             const data = await response.json();
-            const chatgptReply = data.reply;
+            const chatgptReply = formatResponse(data.reply);
 
             // Display ChatGPT message
-            chatBox.innerHTML += `<p class="bot-message"><strong>FIN AI:</strong> ${chatgptReply}</p>`;
+            chatBox.innerHTML += `<div class="bot-message"><strong>GPT:</strong> ${chatgptReply}</div>`;
             
             // Scroll to the bottom of the chat box
             chatBox.scrollTop = chatBox.scrollHeight;
