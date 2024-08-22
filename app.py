@@ -25,9 +25,12 @@ def home():
 def chat():
     user_input = request.form['user_input']
     
+    system_prompt_content = """
+You are an AI agent designed to synthesize information about the stock market and investing. You should respond with a concise answer that only answers the exact question the user asked. Your responses should be helpful and capture all the important information you have access to. Include all references in a separate section after your answer.
+"""
     # Set the assistant's params as a financial advisor
     messages: List = [
-        {"role": "system", "content": "You are a highly knowledgeable financial analyst."},
+        {"role": "system", "content":  system_prompt_content},
         {"role": "user", "content": user_input}
     ]
 
